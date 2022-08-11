@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=""uft-8>
+        <title>Frase Motivacional</title>
+        <script src="js/script.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script>
+            function Random(){
+                document.getElementById("aleatorio").innerHTML = frases.random();
+            }
+        </script>
+    </head>
+    <body>
+        <div class="box">
+            <h5>Frase Motivacional</h5>
+            <button  id="aleatorio" type="button" value="Nova frase" onclick="Random()">Nova frase</button>
+        </div>
+    </body>
+</html>
