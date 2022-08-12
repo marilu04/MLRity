@@ -3,17 +3,30 @@
     <head>
         <meta charset=""uft-8>
         <title>Frase Motivacional</title>
-        <script src="js/script.js"></script>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
         <script>
             function Random(){
-                document.getElementById("aleatorio").innerHTML = frases.random();
+                var frases = new Array();
+                frases[0]="Se nao puder fazer tudo, faca tudo o que puder.";
+                frases[1]="Viva sua vida como se fosse a ultima.";
+                frases[2]="O amanha sempre chega.";
+                frases[3]="Por que tentar quando se pode desistir?";
+                var i = Math.floor(frases.length*Math.random());
+                return alert(frases[i]);
             }
         </script>
+        <style>
+            .box{
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+            }
+        </style>
     </head>
     <body>
         <div class="box">
-            <h5>Frase Motivacional</h5>
+            <h2>Frase Motivacional</h2>
             <button  id="aleatorio" type="button" value="Nova frase" onclick="Random()">Nova frase</button>
         </div>
     </body>
